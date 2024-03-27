@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 export default function Home() {
   return (
-    <main className="bg-slate-950 ">
+    <main className="bg-slate-950 min-h-screen">
       <nav className="  fixed  w-full table-fixed flex justify-center items-center gap-12 p-0 bg-white/65">
         <Link to="/pokemon">
           <div className="flex justify-center items-center ">
@@ -10,7 +10,7 @@ export default function Home() {
               src="    https://cdn-icons-png.flaticon.com/512/287/287221.png "
               alt="pokebola"
             />
-            <p>Pokedex</p>
+            <p>Pokédex</p>
           </div>
         </Link>
 
@@ -48,6 +48,29 @@ export default function Home() {
       </nav>
       <section>
         <Outlet />
+      </section>
+      <section className="flex  items-center align-middle justify-center p-20">
+        <Link to="/pokemon">
+          <img
+            className="size-96 "
+            src="    https://cdn-icons-png.flaticon.com/512/287/287221.png "
+            alt="pokebola"
+          />
+
+          <p className=" flex text-white text-center text-4xl font-semibold">
+            <img
+              className="size-9"
+              src="   https://cdn-icons-png.flaticon.com/512/188/188995.png "
+              alt="iconEevee"
+            />{" "}
+            Pokédex Click Me!
+            <img
+              className="size-9"
+              src="   https://cdn-icons-png.flaticon.com/512/188/188995.png "
+              alt="iconEevee"
+            />
+          </p>
+        </Link>
       </section>
     </main>
   );

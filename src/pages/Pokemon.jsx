@@ -17,8 +17,8 @@ export default function Pokemon() {
 
   return (
     <main
-      className=" bg-slate-950 text-slate-300 min-h-screen flex flex-col items-center p-10 gap-10 
-    bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')]  bg-repeat  "
+      className="bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')]  bg-opacity-80 bg-right-bottom  bg-repeat
+   bg-slate-950 text-slate-300 min-h-screen flex flex-col items-center p-10 gap-10"
     >
       <header className="">
         <img

@@ -23,7 +23,7 @@ export default function PokemonCard(props) {
   return (
     <article
       className="sm:hover:translate-x-2 hover:translate-y-2  bg-black/80  pb-4 md:hover:translate-x-8 md:hover:translate-y-8 hover:shadow-xl  hover:shadow-rose-900/80 
-    bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')] bg-opacity-80 bg-contain bg-fixed bg-left-bottom hover:bg-none rounded-[15px]"
+    md:bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')] bg-opacity-80 bg-contain bg-fixed bg-left-bottom hover:bg-none rounded-[15px]"
     >
       {!pokemon.sprites && <p> cargando </p>}
       <Link
