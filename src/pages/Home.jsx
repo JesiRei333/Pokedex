@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 export default function Home() {
   return (
     <main className="bg-slate-950 min-h-screen">
-      <nav className="  fixed  w-full table-fixed flex justify-center items-center gap-12 p-0 bg-white/65">
+      <nav className="  fixed text-base font-semibold w-full flex justify-center items-center gap-12 p-0 bg-white/65">
         <Link to="/pokemon">
           <div className="flex justify-center items-center ">
             <img
@@ -10,7 +10,7 @@ export default function Home() {
               src="    https://cdn-icons-png.flaticon.com/512/287/287221.png "
               alt="pokebola"
             />
-            <p>Pokédex</p>
+            <p className=" hover:font-bold">Pokédex</p>
           </div>
         </Link>
 
@@ -25,7 +25,7 @@ export default function Home() {
               />
             </div>
             <div className="flex justify-center items-center ">
-              <p>PokeGatcha </p>
+              <p className=" hover:font-bold">PokeGatcha </p>
             </div>
           </div>
         </Link>
@@ -41,7 +41,7 @@ export default function Home() {
               />
             </div>
             <div className="flex justify-center items-center ">
-              <p>Poke-inicial</p>
+              <p className=" hover:font-bold">Poke-inicial</p>
             </div>
           </div>
         </Link>
@@ -57,7 +57,7 @@ export default function Home() {
             alt="pokebola"
           />
 
-          <p className=" flex text-white text-center text-4xl font-semibold">
+          <p className=" flex text-white text-center text-4xl font-semibold hover:font-bold ">
             <img
               className="size-9"
               src="   https://cdn-icons-png.flaticon.com/512/188/188995.png "
