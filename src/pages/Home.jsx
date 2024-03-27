@@ -25,7 +25,7 @@ export default function Home() {
               />
             </div>
             <div className="flex justify-center items-center ">
-              <p className=" hover:font-bold">PokeGachapon </p>
+              <p className=" hover:font-bold">PokeGacha </p>
             </div>
           </div>
         </Link>

@@ -23,7 +23,7 @@ export default function PokemonCard(props) {
   return (
     <article
       className="sm:hover:translate-x-2 hover:translate-y-2  bg-black/80  pb-4 md:hover:translate-x-8 md:hover:translate-y-8 hover:shadow-xl  hover:shadow-rose-900/80 
-    md:bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')] bg-opacity-80 bg-contain bg-fixed bg-left-bottom hover:bg-none rounded-[15px]"
+    bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')] bg-opacity-80 bg-contain bg-fixed bg-left-bottom hover:bg-none rounded-[15px]"
     >
       {!pokemon.sprites && <p> cargando </p>}
       <Link
@@ -38,7 +38,7 @@ export default function PokemonCard(props) {
           />
           <img
             className="size-9 "
-            src="https://cdn.icon-icons.com/icons2/851/PNG/512/Master_Ball_icon-icons.com_67545.png"
+            src="https://cdn.icon-icons.com/icons2/851/PNG/512/snorlax_icon-icons.com_67505.png"
             alt="iconPokeMorada"
           />
           {props.name.toUpperCase()}
