@@ -4,13 +4,14 @@ export default function PokemonInicial() {
   const [pokemon, setPokemon] = useState({});
 
   const PokeRandom = () => {
-    const poke = ["squirtle", "bulbasur", "charmander"];
+    const poke = ["1", "4", "7"];
     const pokeRandom = Math.floor(Math.random() * poke.length);
     return poke[pokeRandom];
   };
+  const random = PokeRandom();
 
   useEffect(() => {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${PokeRandom()}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${random}`)
       .then((response) => response.json())
       .then((json) => {
         setPokemon(json);

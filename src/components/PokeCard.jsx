@@ -36,7 +36,11 @@ export default function PokemonCard(props) {
             src={pokemon.sprites?.other["official-artwork"].front_default}
             alt=""
           />
-
+          <img
+            className="size-9 "
+            src="https://cdn.icon-icons.com/icons2/851/PNG/512/Master_Ball_icon-icons.com_67545.png"
+            alt="iconPokeMorada"
+          />
           {props.name.toUpperCase()}
         </p>
       </Link>
