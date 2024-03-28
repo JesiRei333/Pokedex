@@ -1,17 +1,13 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import PokeCardCompletaPrueba from "../components/CardCompletaPrueba";
 
-export default function PokemonInicial() {
+export default function PokeCardStat() {
   const [pokemon, setPokemon] = useState({});
-
-  const PokeRandom = () => {
-    const poke = ["1", "4", "7"];
-    const pokeRandom = Math.floor(Math.random() * poke.length);
-    return poke[pokeRandom];
-  };
+  const params = useParams();
 
   useEffect(() => {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${PokeRandom()}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${params.name}`)
       .then((response) => response.json())
       .then((json) => {
         setPokemon(json);
@@ -19,7 +15,7 @@ export default function PokemonInicial() {
       .catch((error) => {
         console.log("Error", error);
       });
-  }, []);
+  }, [params.name]);
 
   if (!pokemon.sprites) {
     return (

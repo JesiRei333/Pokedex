@@ -27,7 +27,7 @@ export default function PokemonCard(props) {
     >
       {!pokemon.sprites && <p> cargando </p>}
       <Link
-        to={`/pokemonCardCompleta/${props.name}`}
+        to={`/pokemonCardStat/${props.name}`}
         className="w-full text-lg bg-black/20 text-slate-300"
       >
         <p className=" sm:text-xl font-semibold text-white  md:font-extralight text-neutral-50/50 hover:font-bold flex flex-col bg-black/50 items-center p-0.5">
