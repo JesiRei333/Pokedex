@@ -20,7 +20,7 @@ export default function Pokemon() {
       className="bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')]  bg-opacity-80 bg-right-bottom  bg-repeat
    bg-slate-950 text-slate-300 min-h-screen flex flex-col items-center p-10 gap-10"
     >
-      <header className="">
+      <header className="flex flex-col items-center pt-10">
         <img
           className="w-full max-w-sm"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png"
