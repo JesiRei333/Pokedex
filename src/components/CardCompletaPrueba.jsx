@@ -31,8 +31,11 @@ export default function PokeCardCompletaPrueba(props) {
           src="   https://cdn-icons-png.flaticon.com/512/188/188995.png "
           alt="iconEevee"
         />
-        <div className="flex flex-col items-center text-3xl font-extrabold  text-white">
-          <p>{props.name.toUpperCase()}</p>
+        <div className="flex flex-col items-center text-3xl font-extrabold  text-white hover:shadow-cyan-400/40 hover:shadow-2xl ">
+          <p>
+            {console.log(pokemon.id)}
+            {pokemon.id} {"° "} {props.name.toUpperCase()}
+          </p>
         </div>
 
         <div className="hover:translate-x-5 hover:translate-y-5 ">

@@ -30,7 +30,7 @@ export default function PokemonCard(props) {
         to={`/pokemonCardStat/${props.name}`}
         className="w-full text-lg bg-black/20 text-slate-300"
       >
-        <p className=" sm:text-xl font-semibold text-white  md:font-extralight text-neutral-50/50 hover:font-bold flex flex-col bg-black/50 items-center p-0.5">
+        <div className=" sm:text-xl font-semibold text-white  md:font-extralight text-neutral-50/50 hover:font-bold flex flex-col bg-black/50 items-center p-0.5">
           <img
             className=""
             src={pokemon.sprites?.other["official-artwork"].front_default}
@@ -38,11 +38,14 @@ export default function PokemonCard(props) {
           />
           <img
             className="size-9 "
-            src="https://cdn-icons-png.flaticon.com/512/1408/1408856.png"
-            alt="iconPokeMorada"
+            src="https://cdn-icons-png.flaticon.com/512/14071/14071327.png"
+            alt="mandoMorado"
           />
-          {props.name.toUpperCase()}
-        </p>
+          <p className="hover:shadow-cyan-400 hover:shadow-2xl ">
+            {" "}
+            {props.name.toUpperCase()}
+          </p>
+        </div>
       </Link>
     </article>
   );

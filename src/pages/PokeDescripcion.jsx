@@ -26,8 +26,17 @@ export default function PokeCardStat() {
   return (
     <main
       className="bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')]  bg-opacity-80 bg-right-bottom  bg-repeat
-     bg-slate-950 text-slate-300 min-h-screen flex flex-col items-center p-10 gap-10"
+     bg-slate-950 text-slate-300 min-h-screen flex flex-col items-center pt-5 "
     >
+      <div className="pt-11">
+        <p className="font-semibold text-xl flex flex-col items-center pt-10 ">
+          <img
+            className="max-h-[50px]"
+            src="https://cdn-icons-png.flaticon.com/512/188/188961.png"
+            alt="gatchaImagen"
+          />
+        </p>
+      </div>
       <PokeCardCompletaPrueba name={pokemon.name} />
     </main>
   );
