@@ -36,11 +36,11 @@ export default function PokemonInicial() {
      bg-slate-950 text-slate-300 min-h-screen flex flex-col items-center pt-8 "
     >
       <div>
-        <p className="font-semibold text-xl flex flex-col items-center pt-10 ">
+        <p className="font-semibold text-xl flex flex-col items-center pt-10 pb-5 ">
           tu Pokemón inicial es:
           <img
-            className="max-h-[80px]"
-            src="https://cdn-icons-png.flaticon.com/512/188/188921.png"
+            className="max-h-[50px]"
+            src="https://cdn-icons-png.flaticon.com/512/188/188932.png"
             alt="gatchaImagen"
           />
         </p>
