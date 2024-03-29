@@ -33,7 +33,6 @@ export default function PokeCardCompletaPrueba(props) {
         />
         <div className="flex flex-col items-center text-3xl font-extrabold  text-white hover:shadow-cyan-400/40 hover:shadow-2xl ">
           <p>
-            {console.log(pokemon.id)}
             {pokemon.id} {"° "} {props.name.toUpperCase()}
           </p>
         </div>
