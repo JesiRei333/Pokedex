@@ -32,6 +32,11 @@ export default function PokemonInicial() {
       className="bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')]  bg-opacity-80 bg-right-bottom  bg-repeat
      bg-slate-950 text-slate-300 min-h-screen flex flex-col items-center p-10 gap-10"
     >
+      <div>
+        <p className="font-semibold text-xl flex flex-col items-center pt-10 ">
+          tu Pokemón inicial es:
+        </p>
+      </div>
       <PokeCardCompletaPrueba name={pokemon.name} />
     </main>
   );
