@@ -2,7 +2,18 @@ import { Outlet, Link } from "react-router-dom";
 export default function Home() {
   return (
     <main className="bg-slate-950 min-h-screen">
-      <nav className="  fixed text-base font-semibold w-full flex justify-center items-center gap-12 p-0 bg-white/65">
+      <nav className="  fixed flex sm:justify-center items-center  text-base font-semibold w-full md:gap-12  bg-white/20 md:text-xl md:justify-around md:p-1.5 md:pl-60 md:pr-60">
+        <Link className=" md:pl-3" to="/">
+          <div className="flex justify-center items-center   ">
+            <img
+              className="size-9"
+              src="https://cdn-icons-png.flaticon.com/512/1408/1408856.png "
+              alt="pokebola"
+            />
+            <p className=" hover:font-bold pl-2">Home</p>
+          </div>
+        </Link>
+
         <Link to="/pokemon">
           <div className="flex justify-center items-center ">
             <img
@@ -10,7 +21,7 @@ export default function Home() {
               src="    https://cdn-icons-png.flaticon.com/512/287/287221.png "
               alt="pokebola"
             />
-            <p className=" hover:font-bold">Pokédex</p>
+            <p className=" hover:font-bold pl-2">Pokédex</p>
           </div>
         </Link>
 
@@ -19,13 +30,13 @@ export default function Home() {
             <div>
               {" "}
               <img
-                className="size-9 justify-center items-center"
+                className="min-h-9 min-w-9 size-9 justify-center items-center"
                 src="   https://cdn-icons-png.flaticon.com/512/188/188982.png "
                 alt="vidente"
               />
             </div>
             <div className="flex justify-center items-center ">
-              <p className=" hover:font-bold">PokeGacha </p>
+              <p className=" hover:font-bold pl-2">PokeGacha </p>
             </div>
           </div>
         </Link>
@@ -41,7 +52,7 @@ export default function Home() {
               />
             </div>
             <div className="flex justify-center items-center ">
-              <p className=" hover:font-bold">Poke-inicial</p>
+              <p className=" hover:font-bold pl-2">Poke-inicial</p>
             </div>
           </div>
         </Link>
@@ -49,15 +60,15 @@ export default function Home() {
       <section>
         <Outlet />
       </section>
-      <section className="flex  items-center align-middle justify-center p-20">
+      <section className="flex  items-center align-middle justify-center p-20 ">
         <Link to="/pokemon">
           <img
-            className="size-96 "
+            className=" max-h-50  max-w-50 md:max-h-50  max-w-50"
             src="    https://cdn-icons-png.flaticon.com/512/287/287221.png "
             alt="pokebola"
           />
 
-          <p className=" flex text-white text-center text-4xl font-semibold hover:font-bold ">
+          <p className=" flex justify-center text-white text-center text-4xl font-semibold hover:font-bold pt-8  ">
             <img
               className="size-9"
               src="   https://cdn-icons-png.flaticon.com/512/188/188995.png "

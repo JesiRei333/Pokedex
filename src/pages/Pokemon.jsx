@@ -3,9 +3,22 @@ import PokemonCard from "../components/PokeCard";
 
 export default function Pokemon() {
   const [pokemons, setPokemons] = useState([]);
+  const [countPokemon, setCountPokemon] = useState();
 
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=150")
+    fetch("https://pokeapi.co/api/v2/pokemon")
+      .then((response) => response.json())
+      .then((json) => {
+        const count = json.count;
+        setCountPokemon(count);
+      })
+      .catch((error) => {
+        console.log("Error", error);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch(`https://pokeapi.co/api/v2/pokemon?limit=${countPokemon}`)
       .then((response) => response.json())
       .then((json) => {
         setPokemons(json.results);
@@ -13,7 +26,7 @@ export default function Pokemon() {
       .catch((error) => {
         console.error("Error fetching" + error);
       });
-  }, []);
+  }, [countPokemon]);
 
   return (
     <main
