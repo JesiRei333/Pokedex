@@ -5,7 +5,10 @@ export default function PokemonInicial() {
   const [pokemon, setPokemon] = useState({});
 
   const PokeRandom = () => {
-    const poke = ["1", "4", "7"];
+    const poke = [
+      1, 4, 7, 152, 155, 158, 252, 255, 258, 387, 390, 393, 495, 498, 501, 650,
+      653, 656, 722, 725, 728, 810, 813, 816, 906, 909, 912,
+    ];
     const pokeRandom = Math.floor(Math.random() * poke.length);
     return poke[pokeRandom];
   };
@@ -30,11 +33,16 @@ export default function PokemonInicial() {
   return (
     <main
       className="bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')]  bg-opacity-80 bg-right-bottom  bg-repeat
-     bg-slate-950 text-slate-300 min-h-screen flex flex-col items-center p-10 gap-10"
+     bg-slate-950 text-slate-300 min-h-screen flex flex-col items-center pt-8 "
     >
       <div>
         <p className="font-semibold text-xl flex flex-col items-center pt-10 ">
           tu Pokemón inicial es:
+          <img
+            className="max-h-[80px]"
+            src="https://cdn-icons-png.flaticon.com/512/188/188921.png"
+            alt="gatchaImagen"
+          />
         </p>
       </div>
       <PokeCardCompletaPrueba name={pokemon.name} />
