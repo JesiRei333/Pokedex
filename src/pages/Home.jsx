@@ -2,15 +2,15 @@ import { Outlet, Link } from "react-router-dom";
 export default function Home() {
   return (
     <main className="bg-slate-950 min-h-screen">
-      <nav className=" fixed flex sm:text-sm justify-center items-center  font-semibold w-full md:gap-12  bg-white/20 md:text-xl md:justify-around md:p-1.5 md:pl-60 md:pr-60">
-        <Link className="  md:pl-3" to="/">
+      <nav className=" fixed flex sm:text-sm justify-center items-center  font-semibold w-full md:gap-12  bg-white/20 md:text-xl md:justify-around md:p-1.5 md:pl-60 md:pr-60 gap-1">
+        <Link className=" pl-1 md:pl-3" to="/">
           <div className="flex justify-center items-center   ">
             <img
               className=" size-7 md:size-9 pl-1"
               src="https://cdn-icons-png.flaticon.com/512/1408/1408856.png "
               alt="pokebola"
             />
-            <p className=" hover:font-bold pl-2">Home</p>
+            <p className=" hover:font-bold pl-1">Home</p>
           </div>
         </Link>
 
