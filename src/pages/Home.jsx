@@ -2,11 +2,11 @@ import { Outlet, Link } from "react-router-dom";
 export default function Home() {
   return (
     <main className="bg-slate-950 min-h-screen">
-      <nav className="  fixed flex sm:text-sm sm:justify-center items-center  font-semibold w-full md:gap-12  bg-white/20 md:text-xl md:justify-around md:p-1.5 md:pl-60 md:pr-60">
-        <Link className=" md:pl-3" to="/">
+      <nav className=" fixed flex sm:text-sm sm:justify-center items-center  font-semibold w-full md:gap-12  bg-white/20 md:text-xl md:justify-around md:p-1.5 md:pl-60 md:pr-60">
+        <Link className="  md:pl-3" to="/">
           <div className="flex justify-center items-center   ">
             <img
-              className="size-9"
+              className=" size-7 md:size-9 pl-1"
               src="https://cdn-icons-png.flaticon.com/512/1408/1408856.png "
               alt="pokebola"
             />
@@ -17,7 +17,7 @@ export default function Home() {
         <Link to="/pokemon">
           <div className="flex justify-center items-center ">
             <img
-              className="size-9"
+              className="size-7 md:size-9 pl-1"
               src="    https://cdn-icons-png.flaticon.com/512/287/287221.png "
               alt="pokebola"
             />
@@ -26,11 +26,11 @@ export default function Home() {
         </Link>
 
         <Link to="/pokemonGatcha">
-          <div className="flex ">
+          <div className="flex justify-center items-center ">
             <div>
               {" "}
               <img
-                className="min-h-9 min-w-9 size-9 justify-center items-center"
+                className="size-7 md:size-9 pl-1 "
                 src="   https://cdn-icons-png.flaticon.com/512/188/188982.png "
                 alt="vidente"
               />
@@ -42,11 +42,11 @@ export default function Home() {
         </Link>
 
         <Link className="" to="/pokemonInicial">
-          <div className="flex min-w-90 max-w-90">
+          <div className="flex justify-center items-center">
             <div>
               {" "}
               <img
-                className="size-9"
+                className="size-7 md:size-9 pl-1"
                 src="https://cdn-icons-png.flaticon.com/512/362/362000.png"
                 alt="principal"
               />
